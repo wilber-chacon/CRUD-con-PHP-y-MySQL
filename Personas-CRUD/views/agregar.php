@@ -15,7 +15,7 @@
   <!-- Tempusdominus Bootstrap 4 -->
   <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="dist/css/styles.css">
-  <link rel="stylesheet" href="plugins/toastr/toastr.min.css">
+  <link rel="stylesheet" href="plugins/sweetalert2/sweetalert2.css">
   <!-- DataTables -->
   <link href="plugins/datatables/dataTables.bootstrap4.css" rel="stylesheet" />
   <link rel="stylesheet" href="plugins/datatables/select.dataTables.min.css">
@@ -143,6 +143,7 @@
   <script>
     $.widget.bridge('uibutton', $.ui.button)
   </script>
+  <script src="plugins/jQuery/jquery-3.6.4.js"></script>
   <!-- Bootstrap 4 -->
   <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 
@@ -150,9 +151,9 @@
   <script src="plugins/datatables/datatables.min.js"></script>
   <script src="plugins/datatables/dataTables.bootstrap4.min.js"></script>
   <script src="plugins/datatables/dataTables.select.min.js"></script>
-  <script src="plugins/toastr/toastr.min.js"></script>
   <script src="plugins/datatables/datatables-ini.js"></script>
-  <script src="dist/js/actions.js"></script>
+  <script src="plugins/sweetalert2/sweetalert2.js"></script>
+  <script src="dist/js/action.js"></script>
 
 </body>
 

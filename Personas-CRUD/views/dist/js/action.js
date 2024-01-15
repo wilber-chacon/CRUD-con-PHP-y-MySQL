@@ -1,5 +1,18 @@
 const url = "../controllers/mainController.php";
 
+const sweetAlert = (title, text, icon) => {
+  return Swal.fire({
+    title: `${title}`,
+    text: `${text}`,
+    icon: `${icon}`,
+    showConfirmButton: false,
+    timer: 2000,
+    allowOutsideClick: false,
+    heightAuto: false,
+  });
+};
+
+
 // Proceso para el regitro de nuevos datos
 
 const registrar = async () => {
@@ -11,10 +24,10 @@ const registrar = async () => {
 
   if (ok) {
     $('#form-register').trigger("reset");
-    return toastr.success(mensaje);
+    return sweetAlert("¡Exito!", mensaje, "success");
     
   } else {
-    return toastr.error(mensaje);
+    return sweetAlert("¡Error!", mensaje, "error");
   }
 };
 
@@ -36,14 +49,11 @@ const actualizar = async () => {
   }).then((res) => res.json());
 
   if (ok) {
-    return sweetAlert("¡Exito!", mensaje, "success").then(() => {
-      window.location.href = "./";
-    });
-    // return toastr.success(mensaje);
+    return sweetAlert("¡Exito!", mensaje, "success");
     
   } else {
     return sweetAlert("¡Error!", mensaje, "error");
-    // return toastr.error(mensaje);
+    
   }
 };
 
@@ -71,10 +81,10 @@ const eliminarRegistro = async () => {
   }, 1500 );
     
     
-    return toastr.success(mensaje);
+  return sweetAlert("¡Exito!", mensaje, "success");
     
   } else {
-    return toastr.error(mensaje);
+    return sweetAlert("¡Error!", mensaje, "error");
   }
 };
 

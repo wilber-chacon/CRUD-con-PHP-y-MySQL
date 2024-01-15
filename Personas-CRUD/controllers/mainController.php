@@ -144,10 +144,12 @@ function modificar()
         $result = $agregarModel->ModificarPersona($persona);
 
         if ($result) {
+
             print_r(json_encode([
                 "ok" => true,
                 "mensaje" => "¡El registro se modificó correctamente!",
             ], JSON_PRETTY_PRINT, JSON_UNESCAPED_UNICODE));
+
 
         } else {
             print_r(json_encode([
@@ -165,7 +167,7 @@ function eliminar()
     $hlp = new Helper();
     $id = isset($_POST['id']) ? $hlp->limpiarParametro($_POST['id']) : false;
 
-    
+
     if (!$id) {
 
         print_r(json_encode([
