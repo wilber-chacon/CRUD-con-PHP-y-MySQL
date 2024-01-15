@@ -5,7 +5,7 @@ const sweetAlert = (title, text, icon) => {
     title: `${title}`,
     text: `${text}`,
     icon: `${icon}`,
-    showConfirmButton: false,
+    showConfirmButton: true,
     timer: 2000,
     allowOutsideClick: false,
     heightAuto: false,
