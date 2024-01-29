@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>CRUD DB Empledos</title>
-  <!-- <link rel="icon" type="image/x-icon" href="dist/img//favicon.ico"> -->
+  <link rel="icon" type="image/x-icon" href="dist/img//logo.ico">
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -28,7 +28,11 @@
   <?php require_once '../models/IndexModel.php'; ?>
 
   <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-    <a class="navbar-brand" href="index.php">Wilber Chacón</a>
+    <a class="navbar-brand" href="index.php">
+    <img src="dist/img//logo.ico" width="30" height="30" class="d-inline-block align-top" alt="">
+
+      Wilber Chacón
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
       aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
